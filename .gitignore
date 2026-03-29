@@ -26,7 +26,8 @@ desktop.ini
 
 # Logs
 *.log
-06_DATA_PROCESSING/logs/
+**/logs/
+**/06_DATA_PROCESSING/logs/
 
 # Vault backups
 D:\Vault back ups\
