@@ -1,0 +1,32 @@
+# Obsidian
+.obsidian/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Windows
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Backup files
+*.bak
+*.tmp
+~$*
+
+# Evidence (case data stays local, never pushed)
+03_EVIDENCE/Email_Evidence/*.pdf
+03_EVIDENCE/Screenshot_Evidence/*.png
+03_EVIDENCE/Screenshot_Evidence/*.jpg
+03_EVIDENCE/Official_Documents/*.pdf
+03_EVIDENCE/PRA/*.pdf
+
+# Logs
+*.log
+06_DATA_PROCESSING/logs/
+
+# Vault backups
+D:\Vault back ups\
