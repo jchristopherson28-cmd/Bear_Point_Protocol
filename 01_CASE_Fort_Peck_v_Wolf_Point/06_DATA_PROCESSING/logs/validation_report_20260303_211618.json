@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-03-03T21:16:18.325839",
+  "vault": "F:\\Bear_Point_Protocol\\01_CASE_Fort_Peck_v_Wolf_Point",
+  "statistics": {
+    "EMAIL_count": 0,
+    "SCREENSHOT_count": 0,
+    "DOC_min": 1,
+    "DOC_max": 5,
+    "DOC_count": 5,
+    "DOC_gaps": 0,
+    "PRA_count": 0,
+    "WITNESS_count": 0,
+    "PHOTO_count": 0,
+    "EMAIL_files": 0,
+    "SCREENSHOT_files": 0,
+    "DOC_files": 5,
+    "PRA_files": 0,
+    "WITNESS_files": 0,
+    "PHOTO_files": 0
+  },
+  "issue_count": 0,
+  "warning_count": 12,
+  "issues": [],
+  "warnings": [
+    "Directory not found (skipping): Witness_Statements",
+    "Directory not found (skipping): Photo_Evidence",
+    "[DOC] Missing recommended field 'source_file': DOC-00001_Fort_Peck_Title_VI_Complaint.md",
+    "[DOC] Missing recommended field 'classification': DOC-00001_Fort_Peck_Title_VI_Complaint.md",
+    "[DOC] Missing recommended field 'source_file': DOC-00002_OCR_Investigation_Letter.md",
+    "[DOC] Missing recommended field 'classification': DOC-00002_OCR_Investigation_Letter.md",
+    "[DOC] Missing recommended field 'source_file': DOC-00003_Jackson_Consent_Decree.md",
+    "[DOC] Missing recommended field 'classification': DOC-00003_Jackson_Consent_Decree.md",
+    "[DOC] Missing recommended field 'source_file': DOC-00004_ProPublica_Miseducation_Data.md",
+    "[DOC] Missing recommended field 'classification': DOC-00004_ProPublica_Miseducation_Data.md",
+    "[DOC] Missing recommended field 'source_file': DOC-00005_Yellow_Kidney_v_MT_OPI.md",
+    "[DOC] Missing recommended field 'classification': DOC-00005_Yellow_Kidney_v_MT_OPI.md"
+  ]
+}

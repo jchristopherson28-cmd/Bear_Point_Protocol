@@ -8,7 +8,7 @@ updated: 2026-03-03
 > **Status:** Incorporated March 29, 2026 (WA Secretary of State)
 > **EIN:** 41-5180172
 > **Structure:** Washington Nonprofit Corporation (501(c)(3) pending)
-> **Mission:** Replicable civil rights advocacy infrastructure for tribal communities and underserved populations.
+> **Mission:** Decentralized accountability infrastructure for fighting institutional corruption. Built for Indigenous communities first, now for everyone facing institutional power.
 
 ---
 
@@ -26,10 +26,12 @@ The "medicine lodge model" — open-source legal advocacy infrastructure:
 
 ## Distribution Priority
 
-1. Tribal communities (29 federally recognized tribes in WA)
+1. Indigenous communities and tribal nations
 2. MMIW advocacy organizations
-3. Education discrimination advocates
-4. General civil rights organizations
+3. Parents and families fighting institutional harm
+4. Whistleblowers and anti-corruption advocates
+5. Civil rights organizations
+6. Anyone facing institutional power that counts on them not fighting back
 
 ---
 

@@ -16,7 +16,7 @@ updated: {DEPLOY_DATE}
 2. **Information asymmetry** — Defendants don't know the full scope of documentation. Strategic ambiguity maintained.
 3. **Compound pressure** — Multiple independent vectors applied simultaneously across federal, state, tribal, and private-sector respondents.
 4. **Document everything** — The claimant does not need to endure. The claimant needs only to document.
-5. **Replicable infrastructure** — Build systems, not just cases. Open-source distribution to tribal communities first.
+5. **Replicable infrastructure** — Build systems, not just cases. Open-source distribution to all communities fighting institutional corruption.
 
 ---
 
