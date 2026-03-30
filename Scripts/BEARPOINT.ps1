@@ -109,17 +109,14 @@ function Invoke-DeployCase {
 
 function Invoke-Backup {
     $date = Get-Date -Format "yyyy-MM-dd_HHmm"
-    $dest = "D:\Vault back ups\$date"
-    $log = "D:\Vault back ups\robocopy_backup_$date.log"
-    Write-Host "  Backing up F:\ to $dest ..." -ForegroundColor Yellow
+    $dest = "$PSScriptRoot\..\backups\$date"
+    $log = "$PSScriptRoot\..\backups\robocopy_backup_$date.log"
+    Write-Host "  Backing up vault to $dest ..." -ForegroundColor Yellow
 
     $dirs = @(
-        @{S=".\01_CASE_YourCase"; D="$dest\Bear_Point_Protocol"}
-        @{S="F:\Chairman_Outreach_Package"; D="$dest\Chairman_Outreach_Package"}
-        @{S="F:\downloads"; D="$dest\downloads"}
-        @{S="F:\LM Studios"; D="$dest\LM Studios"}
-        @{S="F:\Obsidian"; D="$dest\Obsidian"}
-        @{S="F:\SWARM_Protocol_Archive"; D="$dest\SWARM_Protocol_Archive"}
+        @{S="$PSScriptRoot\.."; D="$dest\Bear_Point_Protocol"}
+        # Add your case directories below:
+        # @{S="C:\path\to\case"; D="$dest\case_name"}
     )
 
     foreach ($d in $dirs) {

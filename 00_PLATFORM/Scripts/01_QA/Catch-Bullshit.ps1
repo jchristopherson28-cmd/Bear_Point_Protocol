@@ -1,6 +1,6 @@
 # VAULT BULLSHIT CATCHER — Bear Point Protocol (Generic)
 # Adapted from Bear Point Protocol — works with any case vault path
-# Usage: .\Catch-Bullshit.ps1 -VaultPath "F:\Bear_Point_Protocol\01_CASE_Smith_v_District"
+# Usage: .\Catch-Bullshit.ps1 -VaultPath "{INSTALL_PATH}\01_CASE_Smith_v_District"
 
 param(
     [Parameter(Mandatory=$true)]

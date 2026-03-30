@@ -1,7 +1,7 @@
 # Deploy-Case.ps1 v2
 # Purpose: Deploy a new case from _MASTER_TEMPLATE into Bear Point Protocol
 # Usage: .\Deploy-Case.ps1 -CaseName "Smith_v_District" -Complainant "Jane Smith" ...
-# Result: Creates F:\Bear_Point_Protocol\01_CASE_Smith_v_District\ with all templates populated
+# Result: Creates {INSTALL_PATH}\01_CASE_Smith_v_District\ with all templates populated
 #
 # MANUAL ALTERNATIVE:
 #   Copy _MASTER_TEMPLATE folder, rename it, and fill in [bracketed fields] manually.
@@ -54,7 +54,7 @@ param(
     [string]$IncidentDate = "",
 
     [Parameter(Mandatory=$false)]
-    [string]$PlatformRoot = "F:\Bear_Point_Protocol"
+    [string]$PlatformRoot = "{INSTALL_PATH}"
 )
 
 $ErrorActionPreference = "Stop"
@@ -364,7 +364,7 @@ Write-Host "========================================`n" -ForegroundColor Cyan
 
 Write-Host "NEXT STEPS:" -ForegroundColor Yellow
 Write-Host ""
-Write-Host "  1. Open Obsidian — select F:\Bear_Point_Protocol as vault" -ForegroundColor White
+Write-Host "  1. Open Obsidian — select {INSTALL_PATH} as vault" -ForegroundColor White
 Write-Host "     Navigate: $CaseFolderName > 00_COMMAND_CENTER > _STATUS.md" -ForegroundColor DarkGray
 Write-Host ""
 Write-Host "  2. Fill in remaining [bracketed fields]" -ForegroundColor White

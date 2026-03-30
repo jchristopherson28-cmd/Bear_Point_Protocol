@@ -24,13 +24,13 @@ tags:
 
 | Field | Value |
 |-------|-------|
-| **Primary backup location** | `D:\Vault back ups\` |
+| **Primary backup location** | `{BACKUP_PATH}\` |
 | **Naming format** | `YYYY-MM-DD_backup` (routine) or `YYYY-MM-DD_description` (milestone) |
 | **When** | Before batch operations, tier restructures, or any multi-file YAML edits |
 | **Latest backup** | — |
 
 > To back up your case folder, open PowerShell and run:
-> `robocopy "[Your case folder path]" "D:\Vault back ups\YYYY-MM-DD_backup" /E /Z /MT:8`
+> `robocopy "[Your case folder path]" "{BACKUP_PATH}\YYYY-MM-DD_backup" /E /Z /MT:8`
 > Replace the path and date with your actual values.
 
 ---

@@ -7,11 +7,11 @@ description: "Governs evidence intake, cataloging, storage, and federal submissi
 
 ## Platform Root
 
-`F:\Bear_Point_Protocol`
+`{INSTALL_PATH}`
 
 ## Case Root Pattern
 
-`F:\Bear_Point_Protocol\{NN}_CASE_{CaseName}\`
+`{INSTALL_PATH}\{NN}_CASE_{CaseName}\`
 
 ## MCP Trigger Rules
 
@@ -223,7 +223,7 @@ If output limit approached → split into multiple files. Never truncate.
 
 After any batch operation:
 ```powershell
-& "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1" -VaultPath "{CASE_ROOT}"
+& "{INSTALL_PATH}\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1" -VaultPath "{CASE_ROOT}"
 ```
 
 Checks: truncation placeholders, dead wikilinks, index/source count mismatches, YAML frontmatter presence.

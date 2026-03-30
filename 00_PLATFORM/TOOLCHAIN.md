@@ -1,13 +1,13 @@
 # Vault Toolchain Reference — Bear Point Protocol
 
 > **Purpose:** Permanent reference for all available tools across all cases.
-> **Location:** F:\Bear_Point_Protocol\00_PLATFORM\TOOLCHAIN.md
+> **Location:** {INSTALL_PATH}\00_PLATFORM\TOOLCHAIN.md
 > **Last verified:** 2026-03-03
 
 ## Quick Reference Paths
 ```powershell
 # Platform Python venv
-$py = "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\.venv\Scripts\python.exe"
+$py = "{INSTALL_PATH}\00_PLATFORM\Scripts\.venv\Scripts\python.exe"
 
 # Tesseract OCR
 $tesseract = "C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -19,10 +19,10 @@ $tesseract = "C:\Program Files\Tesseract-OCR\tesseract.exe"
 # $dispatcher = "{CASE_PATH}\00_COMMAND_CENTER\Vault-Dispatcher.ps1"
 
 # Catch-Bullshit (platform-level, takes -VaultPath)
-$catchBS = "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1"
+$catchBS = "{INSTALL_PATH}\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1"
 
 # Deploy new case
-$deploy = "F:\Bear_Point_Protocol\Deploy-Case.ps1"
+$deploy = "{INSTALL_PATH}\Deploy-Case.ps1"
 ```
 
 ## Installed Versions
@@ -65,8 +65,8 @@ pydantic, rich, img2pdf, pi-heif
 ## Platform venv Setup (New Machine)
 
 ```powershell
-python -m venv "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\.venv"
-& "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\.venv\Scripts\pip.exe" install `
+python -m venv "{INSTALL_PATH}\00_PLATFORM\Scripts\.venv"
+& "{INSTALL_PATH}\00_PLATFORM\Scripts\.venv\Scripts\pip.exe" install `
     pdfplumber python-docx openpyxl pandas beautifulsoup4 markdownify `
     pywin32 pillow requests lxml numpy cryptography ocrmypdf pikepdf `
     pydantic rich img2pdf pi-heif

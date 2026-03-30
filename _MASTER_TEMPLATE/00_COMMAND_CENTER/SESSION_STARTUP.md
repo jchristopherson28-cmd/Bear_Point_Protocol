@@ -30,10 +30,10 @@ purpose: Session initialization — read vault files before responding
 
 | Priority | Tool | Access | Use For |
 |----------|------|--------|---------|
-| 1 | `Filesystem:` | F:\ vault (user's PC) | All vault operations |
+| 1 | `Filesystem:` | {INSTALL_DRIVE} vault (user's PC) | All vault operations |
 | 2 | `Gmail:` | Gmail MCP | Email intake, drafts, search |
 | 3 | `PDF Tools:` | User's PC | Forms, extraction |
-| 4 | `bash_tool` | Claude container only | NO F:\ access |
+| 4 | `bash_tool` | Claude container only | NO vault drive access |
 
 **Filesystem tools operate on user's PC. Bash operates on Claude's container.**
 
@@ -100,7 +100,7 @@ If output limit approached → split files. Never truncate.
 ## Backup Command (Before Batch Operations)
 
 ```powershell
-robocopy "[Your case folder path]" "D:\Vault back ups\$(Get-Date -Format 'yyyy-MM-dd_HHmm')" /E /Z /MT:8
+robocopy "[Your case folder path]" "{BACKUP_PATH}\$(Get-Date -Format 'yyyy-MM-dd_HHmm')" /E /Z /MT:8
 ```
 
 ---
