@@ -1,5 +1,5 @@
 # VAULT BULLSHIT CATCHER — Bear Point Protocol (Generic)
-# Adapted from SVR 1 v3 — works with any case vault path
+# Adapted from Bear Point Protocol — works with any case vault path
 # Usage: .\Catch-Bullshit.ps1 -VaultPath "F:\Bear_Point_Protocol\01_CASE_Smith_v_District"
 
 param(

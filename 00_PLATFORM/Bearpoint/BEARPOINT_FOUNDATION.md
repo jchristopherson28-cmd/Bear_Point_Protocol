@@ -37,7 +37,7 @@ The "medicine lodge model" — open-source legal advocacy infrastructure:
 
 ## Settlement Commitment
 
-All settlement funds from Christopherson v. YCS pledged toward indigenous healing programs.
+All settlement funds from founding case pledged toward indigenous healing programs.
 
 ---
 

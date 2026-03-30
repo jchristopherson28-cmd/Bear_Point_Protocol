@@ -11,7 +11,7 @@ param(
     [string]$Output = "",
 
     [Parameter(Mandatory=$false)]
-    [string]$VaultRoot = "F:\1_SvR_AI_Operations",
+    [string]$VaultRoot = ".\01_CASE_YourCase",
 
     [Parameter(Mandatory=$false)]
     [switch]$Recurse,

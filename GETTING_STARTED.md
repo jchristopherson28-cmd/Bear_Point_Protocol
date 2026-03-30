@@ -50,7 +50,7 @@ The system was built from a live case and stress-tested against a second. It is 
 Download or clone the Bear Point Protocol to a local drive:
 
 ```
-F:\Bear_Point_Protocol\          ← or any drive letter with space
+{INSTALL_PATH}\          ← or any drive letter with space
 ```
 
 ### 1.2 Run the Deployment Script
@@ -58,7 +58,7 @@ F:\Bear_Point_Protocol\          ← or any drive letter with space
 Open PowerShell and navigate to the platform root:
 
 ```powershell
-cd F:\Bear_Point_Protocol
+cd {INSTALL_PATH}
 .\Deploy-Case.ps1 `
     -CaseName "Smith_v_Springfield_SD" `
     -Complainant "Jane Smith" `
@@ -67,12 +67,12 @@ cd F:\Bear_Point_Protocol
     -IncidentDate "2026-01-15"
 ```
 
-This creates a complete case vault at `F:\Bear_Point_Protocol\01_CASE_Smith_v_Springfield_SD\` with all templates populated.
+This creates a complete case vault at `{INSTALL_PATH}\01_CASE_Smith_v_Springfield_SD\` with all templates populated.
 
 ### 1.3 Open in Obsidian
 
 1. Open Obsidian
-2. **Open folder as vault** → select `F:\Bear_Point_Protocol`
+2. **Open folder as vault** → select `{INSTALL_PATH}`
 3. Trust the vault when prompted
 4. Install **Dataview** plugin: Settings → Community plugins → Browse → search "Dataview" → Install → Enable
 5. Navigate to your case folder → `00_COMMAND_CENTER\_STATUS.md`
@@ -91,7 +91,7 @@ You should see the case dashboard with your variables populated.
 2. Name it: `[Case Name] — Bear Point Protocol`
 3. Upload these files to **Project Knowledge**:
    - `[CASE_ROOT]\00_COMMAND_CENTER\SESSION_STARTUP.md`
-   - `F:\Bear_Point_Protocol\_PROTOCOL.md`
+   - `{INSTALL_PATH}\_PROTOCOL.md`
 4. Add the `evidence-architecture` skill if available (see `00_PLATFORM\Skills\`)
 
 ### 2.2 Enable MCP Filesystem Access
@@ -107,7 +107,7 @@ MCP (Model Context Protocol) gives Claude direct read/write access to your vault
          "args": [
            "-y",
            "@anthropic-ai/mcp-filesystem",
-           "F:\\Bear_Point_Protocol"
+           "{INSTALL_PATH}"
          ]
        }
      }

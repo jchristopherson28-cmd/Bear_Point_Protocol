@@ -3,7 +3,7 @@
 # Provides quick access to all protocol operations
 
 param(
-    [string]$VaultRoot = "F:\1_SvR_AI_Operations",
+    [string]$VaultRoot = ".\01_CASE_YourCase",
     [string]$PlatformRoot = "C:\Bear_Point_Protocol"
 )
 
@@ -114,7 +114,7 @@ function Invoke-Backup {
     Write-Host "  Backing up F:\ to $dest ..." -ForegroundColor Yellow
 
     $dirs = @(
-        @{S="F:\1_SvR_AI_Operations"; D="$dest\1_SvR_AI_Operations"}
+        @{S=".\01_CASE_YourCase"; D="$dest\1_SvR_AI_Operations"}
         @{S="F:\Chairman_Outreach_Package"; D="$dest\Chairman_Outreach_Package"}
         @{S="F:\downloads"; D="$dest\downloads"}
         @{S="F:\LM Studios"; D="$dest\LM Studios"}

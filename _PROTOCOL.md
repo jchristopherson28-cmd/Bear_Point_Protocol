@@ -24,7 +24,7 @@ updated: {DEPLOY_DATE}
 
 | Level | Purpose |
 |-------|---------|
-| `F:\Bear_Point_Protocol\` | Platform root |
+| `{INSTALL_PATH}\` | Platform root |
 | `00_PLATFORM\` | Shared infrastructure (scripts, legal reference, MMIW, Bearpoint docs) |
 | `_MASTER_TEMPLATE\` | Gold copy — NEVER edit directly. Deploy-Case.ps1 copies this. |
 | `01_CASE_{name}\` through `99_CASE_{name}\` | Deployed case instances |
@@ -75,7 +75,7 @@ Underscores for spaces. No special characters except hyphens in ID prefix.
 
 ## Script Location
 
-- Shared scripts: `F:\Bear_Point_Protocol\00_PLATFORM\Scripts\`
+- Shared scripts: `{INSTALL_PATH}\00_PLATFORM\Scripts\`
 - Case-specific scripts: `{CASE_ROOT}\06_DATA_PROCESSING\scripts\` (if needed)
 - All scripts reference `$VaultPath` parameter, not hardcoded paths
 
@@ -106,8 +106,8 @@ Each deployed case gets its own Claude Project for context isolation.
 | File | Purpose | Required |
 |------|---------|----------|
 | `{CASE_ROOT}\00_COMMAND_CENTER\SESSION_STARTUP.md` | Session initialization — mandatory vault reads, ID ranges, tool priority | YES |
-| `F:\Bear_Point_Protocol\_PROTOCOL.md` | Platform rules, principles, archive discipline | YES |
-| `F:\Bear_Point_Protocol\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1` | QA reference — Claude reads but doesn't run directly | RECOMMENDED |
+| `{INSTALL_PATH}\_PROTOCOL.md` | Platform rules, principles, archive discipline | YES |
+| `{INSTALL_PATH}\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1` | QA reference — Claude reads but doesn't run directly | RECOMMENDED |
 
 ### Custom Instructions (Paste into Project)
 
@@ -125,7 +125,7 @@ Never truncate output — split files if approaching limit.
 
 If using evidence-architecture skill:
 1. Settings → Claude Skills → Add Skill
-2. Point to `F:\Bear_Point_Protocol\00_PLATFORM\Skills\evidence-architecture\SKILL.md`
+2. Point to `{INSTALL_PATH}\00_PLATFORM\Skills\evidence-architecture\SKILL.md`
 3. Skill triggers automatically on evidence intake, ID assignment, federal submission, actor profiling
 
 ---
@@ -146,7 +146,7 @@ Add to Claude Desktop settings (`%APPDATA%\Claude\claude_desktop_config.json`):
       "args": [
         "-y",
         "@anthropic-ai/mcp-filesystem",
-        "F:\\Bear_Point_Protocol"
+        "{INSTALL_PATH}"
       ]
     }
   }
@@ -155,7 +155,7 @@ Add to Claude Desktop settings (`%APPDATA%\Claude\claude_desktop_config.json`):
 
 ### Access Scope
 
-MCP filesystem grants read/write to `F:\Bear_Point_Protocol` and all subdirectories. This includes:
+MCP filesystem grants read/write to `{INSTALL_PATH}` and all subdirectories. This includes:
 - All case vaults (`01_CASE_*\` through `99_CASE_*\`)
 - Platform infrastructure (`00_PLATFORM\`)
 - Master template (`_MASTER_TEMPLATE\`) — **NEVER write here; read-only by convention**
@@ -175,7 +175,7 @@ MCP filesystem grants read/write to `F:\Bear_Point_Protocol` and all subdirector
 
 After configuration, test with:
 ```
-"List the contents of F:\Bear_Point_Protocol"
+"List the contents of {INSTALL_PATH}"
 ```
 Claude should respond using `Filesystem:list_directory` and show platform structure.
 

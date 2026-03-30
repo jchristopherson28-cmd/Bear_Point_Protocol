@@ -5,10 +5,10 @@ Validates evidence file integrity: ID formats, gaps, duplicates, frontmatter,
 filename/ID alignment, orphan detection.
 
 Usage:
-    python validate_evidence.py --vault "F:\\Bear_Point_Protocol\\01_CASE_Smith_v_District"
-    python validate_evidence.py --vault "F:\\..." --full
-    python validate_evidence.py --vault "F:\\..." --quick
-    python validate_evidence.py --vault "F:\\..." --json
+    python validate_evidence.py --vault "{INSTALL_PATH}\\01_CASE_Smith_v_District"
+    python validate_evidence.py --vault "{INSTALL_PATH}\\01_CASE_..." --full
+    python validate_evidence.py --vault "{INSTALL_PATH}\\01_CASE_..." --quick
+    python validate_evidence.py --vault "{INSTALL_PATH}\\01_CASE_..." --json
 
 Arguments:
     --vault   Path to the case root (required)
@@ -16,7 +16,7 @@ Arguments:
     --quick   ID format and duplicate check only
     --json    Output JSON report to stdout (also always written to logs/)
 
-Ported from SvR validate_evidence.py — hardcoded paths replaced with --vault param.
+Ported from original vault validator — hardcoded paths replaced with --vault param.
 Compatible with Bear Point Protocol vault structure.
 """
 
@@ -379,7 +379,7 @@ def main():
     )
     parser.add_argument(
         '--vault', required=True,
-        help='Path to case root (e.g. F:\\Bear_Point_Protocol\\01_CASE_Smith_v_District)'
+        help='Path to case root (e.g. {INSTALL_PATH}\\01_CASE_Smith_v_District)'
     )
     parser.add_argument('--full',  action='store_true', help='Full validation (default)')
     parser.add_argument('--quick', action='store_true', help='ID format and duplicates only')

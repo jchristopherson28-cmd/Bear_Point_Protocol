@@ -17,10 +17,10 @@ purpose: Session initialization — read vault files before responding
 |----------|------|---------|
 | 1 | `[Your case folder path]\00_COMMAND_CENTER\_STATUS.md` | Current state, active tasks |
 | 2 | `[Your case folder path]\00_COMMAND_CENTER\DEADLINE_TRACKER.md` | SOL dates, filing deadlines |
-| 3 | `F:\Bear_Point_Protocol\00_PLATFORM\TOOLCHAIN.md` | Installed tools, venv path |
+| 3 | `{INSTALL_PATH}\00_PLATFORM\TOOLCHAIN.md` | Installed tools, venv path |
 
 > **Note:** Replace `[Your case folder path]` with the actual path to your case.
-> Example: `F:\Bear_Point_Protocol\01_CASE_Smith_v_Springfield\`
+> Example: `{INSTALL_PATH}\01_CASE_Smith_v_Springfield\`
 
 **Read these BEFORE responding to first user message.**
 
@@ -108,7 +108,7 @@ robocopy "[Your case folder path]" "D:\Vault back ups\$(Get-Date -Format 'yyyy-M
 ## Validation Script
 
 ```powershell
-& "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1" -VaultPath "[Your case folder path]"
+& "{INSTALL_PATH}\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1" -VaultPath "[Your case folder path]"
 ```
 
 ---
@@ -117,11 +117,11 @@ robocopy "[Your case folder path]" "D:\Vault back ups\$(Get-Date -Format 'yyyy-M
 
 | Resource | Path |
 |----------|------|
-| Platform root | `F:\Bear_Point_Protocol\` |
+| Platform root | `{INSTALL_PATH}\` |
 | Case root | `[Your case folder path]` |
-| Shared scripts | `F:\Bear_Point_Protocol\00_PLATFORM\Scripts\` |
-| Python venv | `F:\Bear_Point_Protocol\00_PLATFORM\Scripts\.venv\` |
-| Legal reference | `F:\Bear_Point_Protocol\00_PLATFORM\Legal_Reference\` |
+| Shared scripts | `{INSTALL_PATH}\00_PLATFORM\Scripts\` |
+| Python venv | `{INSTALL_PATH}\00_PLATFORM\Scripts\.venv\` |
+| Legal reference | `{INSTALL_PATH}\00_PLATFORM\Legal_Reference\` |
 
 ---
 

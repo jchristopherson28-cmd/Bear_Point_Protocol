@@ -149,7 +149,7 @@ For bulk email processing:
 
 After any intake session:
 ```powershell
-& "F:\Bear_Point_Protocol\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1" -VaultPath "[Your case folder path]"
+& "{INSTALL_PATH}\00_PLATFORM\Scripts\01_QA\Catch-Bullshit.ps1" -VaultPath "[Your case folder path]"
 ```
 
 ---

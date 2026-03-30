@@ -5,7 +5,7 @@
 
 param(
     [Parameter(Mandatory=$false)]
-    [string]$VaultRoot = "F:\1_SvR_AI_Operations",
+    [string]$VaultRoot = ".\01_CASE_YourCase",
 
     [Parameter(Mandatory=$false)]
     [string]$Output = "",
@@ -181,7 +181,7 @@ switch ($Format) {
 - **RCW 42.56.550(4):** Court shall award daily penalties for each record not produced
 - **Yousoufian v. Sims:** Washington Supreme Court held no aggregate cap on PRA penalties
 - **Spoliation:** Print-to-scan conversion of born-digital documents constitutes willful non-compliance
-- **Buckingham Confession:** Written admission of scanning process by DeeDee Buckingham (J.D.)
+- **Confession Doctrine:** Written admission of non-compliant production process by records custodian
 
 ## Penalty Growth Rate
 
