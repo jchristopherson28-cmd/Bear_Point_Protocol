@@ -114,7 +114,7 @@ function Invoke-Backup {
     Write-Host "  Backing up F:\ to $dest ..." -ForegroundColor Yellow
 
     $dirs = @(
-        @{S=".\01_CASE_YourCase"; D="$dest\1_SvR_AI_Operations"}
+        @{S=".\01_CASE_YourCase"; D="$dest\Bear_Point_Protocol"}
         @{S="F:\Chairman_Outreach_Package"; D="$dest\Chairman_Outreach_Package"}
         @{S="F:\downloads"; D="$dest\downloads"}
         @{S="F:\LM Studios"; D="$dest\LM Studios"}
