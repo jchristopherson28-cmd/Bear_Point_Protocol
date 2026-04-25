@@ -258,7 +258,87 @@ The Foundation shall indemnify any director, officer, or MGC member who was or i
 The Foundation may purchase and maintain insurance on behalf of any person who is or was a director, officer, MGC member, or employee against any liability asserted against such person in any such capacity.
 ---
 
-## ARTICLE XIV — ANTI-HIJACKING SUMMARY
+## ARTICLE XV — DOCUMENT RETENTION AND INTEGRITY
+
+### Section 15.1 — Policy
+The Foundation shall maintain a comprehensive document retention policy. All Foundation records shall be preserved in accordance with applicable federal, state, and tribal law, IRS requirements, and the retention schedule established in this Article.
+
+### Section 15.2 — Permanent Retention (No Destruction Permitted)
+The following records shall be retained permanently and may never be destroyed:
+(a) Articles of Incorporation and all amendments;
+(b) Bylaws and all amendments;
+(c) IRS determination letter and all correspondence related to tax-exempt status;
+(d) IRS Form 1023-EZ or Form 1023 application and all supporting documents;
+(e) Board meeting minutes and MGC meeting minutes;
+(f) Annual financial reports and audit reports;
+(g) All contracts and grant agreements exceeding $5,000;
+(h) Insurance policies and claims records;
+(i) Intellectual property registrations (trademarks, copyrights);
+(j) Case evidence files, forensic hash logs, and chain-of-custody records for all advocacy work;
+(k) All litigation hold notices issued or received.
+
+### Section 15.3 — Seven-Year Retention
+The following records shall be retained for a minimum of seven (7) years after the relevant fiscal year or event:
+(a) IRS Forms 990, 990-EZ, or 990-N and all schedules and attachments;
+(b) Financial transaction records, bank statements, and receipts;
+(c) Payroll and compensation records;
+(d) Donor records and acknowledgment letters;
+(e) Vendor invoices and payment records;
+(f) Grant applications (submitted and received);
+(g) Conflict of interest disclosures (Article X);
+(h) Correspondence with regulatory agencies.
+
+### Section 15.4 — Three-Year Retention
+The following records shall be retained for a minimum of three (3) years:
+(a) General correspondence not related to case work or regulatory matters;
+(b) Internal memoranda and routine communications;
+(c) Event planning documents;
+(d) Volunteer records.
+
+### Section 15.5 — Evidence Integrity
+All case-related evidence files shall be maintained with cryptographic hash verification (SHA-256 or stronger). Chain-of-custody documentation shall be maintained for all evidence from intake through final disposition. Evidence files shall be stored in a structured vault system with unique evidence identifiers. No evidence file shall be modified after intake without creating a new version and preserving the original with hash verification of both versions.
+
+### Section 15.6 — Digital Preservation
+(a) All permanent and seven-year retention records shall be maintained in at least two (2) independent storage locations;
+(b) At least one (1) copy shall be stored on a device not permanently connected to a network;
+(c) Digital records shall be stored in open, non-proprietary formats where practicable (Markdown, PDF/A, plain text, CSV);
+(d) Annual verification of backup integrity shall be performed and documented.
+
+### Section 15.7 — Litigation Hold
+Upon notice or reasonable anticipation of litigation, regulatory investigation, or audit, the Foundation shall immediately suspend all document destruction and issue a written litigation hold notice to all persons in possession of potentially relevant records. The litigation hold shall remain in effect until released in writing by the Chair of the Board or legal counsel.
+
+### Section 15.8 — Prohibition on Destruction
+No officer, director, MGC member, employee, or agent of the Foundation shall destroy, alter, mutilate, conceal, or falsify any Foundation record with intent to obstruct or influence any investigation, audit, or legal proceeding. Violation of this Section constitutes grounds for immediate removal and referral to appropriate authorities.
+
+### Section 15.9 — Responsibility
+The Treasurer shall serve as the Foundation's Records Officer unless another person is designated by Board resolution. The Records Officer shall ensure compliance with this Article, conduct annual retention audits, and report findings to the Board and MGC.
+
+---
+
+## ARTICLE XVI — WHISTLEBLOWER PROTECTION
+
+### Section 16.1 — Policy
+The Foundation shall not retaliate against any director, officer, MGC member, employee, volunteer, or contractor who in good faith reports suspected violations of law, these Bylaws, Foundation policies, or ethical standards.
+
+### Section 16.2 — Protected Activities
+Protected activities include:
+(a) Reporting suspected fraud, waste, abuse, or mismanagement to the MGC, the Board, or any external authority;
+(b) Cooperating with any investigation by a regulatory agency, law enforcement, or auditor;
+(c) Refusing to participate in activities the person reasonably believes to be illegal or in violation of these Bylaws;
+(d) Reporting suspected violations of the Foundation's conflict of interest, compensation, or document retention policies.
+
+### Section 16.3 — Prohibition on Retaliation
+No person shall be demoted, terminated, threatened, harassed, or subjected to any adverse action for engaging in protected activities under this Article. Any person who retaliates against a whistleblower shall be subject to immediate disciplinary action, up to and including removal and termination.
+
+### Section 16.4 — Reporting Channel
+Reports may be made directly to any MGC member, bypassing the normal chain of command. If the report concerns an MGC member, the report may be made to the sole Member or to outside legal counsel retained by the Foundation.
+
+### Section 16.5 — Investigation
+All reports shall be investigated promptly and thoroughly. The results of the investigation shall be documented in writing and retained permanently under Section 15.2.
+
+---
+
+## ARTICLE XVII — ANTI-HIJACKING SUMMARY
 
 This Article is a plain-language summary for future Board members, staff, and stakeholders. It does not create rights or obligations beyond those stated in the Articles above.
 
@@ -271,6 +351,8 @@ This Article is a plain-language summary for future Board members, staff, and st
 5. **Hostile dissolution** — Dissolution requires unanimous MGC vote. Assets go to MMIWP or Indigenous civil rights organizations, never to individuals. (Article XI)
 6. **Conversion to for-profit** — Prohibited absolutely. (Section 11.3)
 7. **Bylaws gutting** — Seven provisions are unamendable. All other amendments require both the Member and MGC. (Article XII)
+8. **Evidence destruction** — Permanent retention of all case evidence with SHA-256 hash verification. Litigation hold protocol. Criminal referral for intentional destruction. (Article XV)
+9. **Retaliation against whistleblowers** — Protected reporting channel directly to MGC. Immediate termination for retaliation. (Article XVI)
 
 **This Foundation cannot be bought, captured, converted, or gutted. It serves the people or it ceases to exist.**
 
