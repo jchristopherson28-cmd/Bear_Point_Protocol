@@ -3,6 +3,8 @@
 > **Decentralized accountability infrastructure for fighting institutional corruption.**
 > Open source. Free forever. GPL v3.
 
+**Foundation:** [bearpointfdn.org](https://bearpointfdn.org) · Bearpoint Foundation (EIN 41-5180172, WA Nonprofit Corporation, 501(c)(3) pending) · info@bearpointfdn.org
+
 ---
 
 ## What This Is
